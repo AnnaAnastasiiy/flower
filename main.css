@@ -1,0 +1,26 @@
+#menu
+{
+   position: fixed;
+   text-align: center;
+   top: 0;
+}
+#pics
+{
+   text-align: center;
+}
+#parent
+{
+   position:relative;
+   width: 100%;
+   display:inline-block;
+   vertical-align:top;
+}
+#left2
+{
+   width: 40%;
+}
+#right2
+{
+   position: relative;
+   width: 60%;
+}
