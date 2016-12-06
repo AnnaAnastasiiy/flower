@@ -24,3 +24,10 @@
    position: relative;
    width: 60%;
 }
+#1 {
+  transition:transforn 5s ease-in-out; 
+}
+#1 {
+   cursor:pointer;
+   transform:rotate(3600);
+}
