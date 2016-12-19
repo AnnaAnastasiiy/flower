@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Flowerserve</title>
@@ -9,68 +10,79 @@
     <link rel="stylesheet" media="(min-width: 850px)" href="layyot-lg.css">
     <link rel="stylesheet" media="(min-width: 600px) and (max-width: 849px)" href="layyot-md.css">
     <link rel="stylesheet" media="(max-width: 599px)" href="layyot-sm.css">
-    <body>
-          <nav id="menu"> <a href="#section1">Букет</a> | <a href="#section2">Відкритка</a> 
-            | <a href="#section3">Адрес</a> | <a href="#section4">Дата/Час</a> 
-           </nav>
-           
-         <div id="pics">
-             <a href="">1</a>, <a href="">2</a>, <a href="">3</a>, 
-             <a href="">4</a>, <a href="">5</a>, <a href="">6</a>, 
-             <a href="">7</a>, <a href="">8</a>, <a href="">9</a>, 
-             <a href="">10</a>
-         </div>
-        <div id="parent">
-            </div>
-            <div id="right2"><img src="logo.jpg" alt="flowers" width="300" hight="300"></div>
+</head>
+
+<body>
+    <nav id="menu"> 
+     <a href="#section1">Букет</a> | 
+     <a href="#section2">Відкритка</a> | 
+     <a href="#section3">Адрес</a> | 
+     <a href="#section4">Дата/Час</a>
+    </nav>
+        <div id "1">FLOWERSERVE</div>
+    <div id="parent">
+    </div>
+    <div id="right2"><img src="logo.jpg" alt="flowers" width="300" hight="300"></div>
+    <p align=center> 
+
+    </p>
+    <div id="carousel" class="carousel">
+        <button class="arrow prev">⇦</button>
+        <div class="gallery">
+            <ul class="images">
+                <li><a href="#" onclick="pic(1);"><img src="1.jpg"></a></li>
+                <li><a href="#" onclick="pic(2);"><img src="2.jpg"></a></li>
+                <li><a href="#" onclick="pic(3);"><img src="3.jpg"></a></li>
+                <li><a href="#" onclick="pic(4);"><img src="4.jpg"></a></li>
+                <li><a href="#" onclick="pic(5);"><img src="5.jpg"></a></li>
+                <li><a href="#" onclick="pic(6);"><img src="6.jpg"></a></li>
+                <li><a href="#" onclick="pic(7);"><img src="7.jpg"></a></li>
+                <li><a href="#" onclick="pic(8);"><img src="8.jpg"></a></li>
+                <li><a href="#" onclick="pic(9);"><img src="9.jpg"></a></li>
+                <li><a href="#" onclick="pic(10);"><img src="10.jpg"></a></li>
+                <li><a href="#" onclick="pic(11);"><img src="11.jpg"></a></li>
+            </ul>
         </div>
-        <div>
-            <div id="foto1"><img src="3.jpg" alt="foto1" width="700" hight="700">  
-            <p>Солодкий кошик</p>
-            <div id="foto1"><img src="2.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="1.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="4.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="5.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="6.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="7.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="8.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="9.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="10.jpg" alt="foto1" width="700" hight="700">
-            <div id="foto1"><img src="11.jpg" alt="foto1" width="700" hight="700">
-        </div>
-        <p align=center>
-        <div id"1">FLOWERSERVE</div></p>
-        <form>
+        <button class="arrow next">⇨</button>
+    </div>
+     <script src="index.js"></script>
+     <div>
+         <img id="my_pic" src="" width="735px" hight="735px">
+     </div>
+     
+    <form>
         <a name="section1">Букет</a>
         <p>
-        <a name="section2">Привітання</a>
-        <p align=center>
-        <label>Текст на передній стороні</label>
-        <input type="text"></p>
-        <p align=center>
-        <label>Привітання на обороті</label>
-        <input type="text"></p>
-        <p align=center>
-        <label>Підпис</label>
-        <input type="text"></p>
-        <a name="section3">Адрес</a>
-        <p align=center>
-        <label>Вулиця</label>
-        <input type="text"></p>
-        <p align=center>
-        <label>Будинок</label>
-        <input type="text"></p>
-        <p align=center>
-        <label>Квартира</label>
-        <input type="text"></p>
-        <a name="section4">Дата/час</a>
-        <p align=center>
-        <label>Дата доставки</label>
-        <input type="text"></p>
-        <p align=center>
-        <label>Рекомендований час доставки</label>
-        <input type="text"></p>
-        </form>
-      </p>  
-    </body>
+            </div>
+            <a name="section2">Привітання</a>
+            <p align=center>
+                <label>Текст на передній стороні</label>
+                <input type="text"></p>
+            <p align=center>
+                <label>Привітання на обороті</label>
+                <input type="text"></p>
+            <p align=center>
+                <label>Підпис</label>
+                <input type="text"></p>
+            <a name="section3">Адрес</a>
+            <p align=center>
+                <label>Вулиця</label>
+                <input type="text"></p>
+            <p align=center>
+                <label>Будинок</label>
+                <input type="text"></p>
+            <p align=center>
+                <label>Квартира</label>
+                <input type="text"></p>
+            <a name="section4">Дата/час</a>
+            <p align=center>
+                <label>Дата доставки</label>
+                <input type="text"></p>
+            <p align=center>
+                <label>Рекомендований час доставки</label>
+                <input type="text"></p>
+    </form>
+    </p>
+</body>
+
 </html>
