@@ -3,86 +3,230 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Flowerserve</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="(min-width: 850px)" href="layyot-lg.css">
-    <link rel="stylesheet" media="(min-width: 600px) and (max-width: 849px)" href="layyot-md.css">
-    <link rel="stylesheet" media="(max-width: 599px)" href="layyot-sm.css">
+    <title>FlowerServe</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="js/smooth-scroll.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
-<body>
-    <nav id="menu"> 
-     <a href="#section1">Букет</a> | 
-     <a href="#section2">Відкритка</a> | 
-     <a href="#section3">Адрес</a> | 
-     <a href="#section4">Дата/Час</a>
-    </nav>
-        <div id "1">FLOWERSERVE</div>
-    <div id="parent">
-    </div>
-    <div id="right2"><img src="logo.jpg" alt="flowers" width="300" hight="300"></div>
-    <p align=center> 
+<body class="flower">
 
-    </p>
-    <a name="section1">Букет</a>
-    <div id="carousel" class="carousel">
-        <button class="arrow prev">⇦</button>
-        <div class="gallery">
-            <ul class="images">
-                <li><a href="#" onclick="pic(1);"><img src="1.jpg"></a></li>
-                <li><a href="#" onclick="pic(2);"><img src="2.jpg"></a></li>
-                <li><a href="#" onclick="pic(3);"><img src="3.jpg"></a></li>
-                <li><a href="#" onclick="pic(4);"><img src="4.jpg"></a></li>
-                <li><a href="#" onclick="pic(5);"><img src="5.jpg"></a></li>
-                <li><a href="#" onclick="pic(6);"><img src="6.jpg"></a></li>
-                <li><a href="#" onclick="pic(7);"><img src="7.jpg"></a></li>
-                <li><a href="#" onclick="pic(8);"><img src="8.jpg"></a></li>
-                <li><a href="#" onclick="pic(9);"><img src="9.jpg"></a></li>
-                <li><a href="#" onclick="pic(10);"><img src="10.jpg"></a></li>
-                <li><a href="#" onclick="pic(11);"><img src="11.jpg"></a></li>
-            </ul>
-        </div>
-        <button class="arrow next">⇨</button>
-    </div>
-     <script src="index.js"></script>
-     <div>
-         <img id="my_pic" src="" width="735px" hight="735px">
-     </div>
-     
-    <form>
-        <p>
+
+    <div class="container-fluid flower">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          </button>
+                    <a class="navbar-brand" href="#">Flower Serve</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#Greeting">Букет</a></li>
+                        <li><a href="#Vidkrytka">Віткритка</a></li>
+                        <li><a href="#Address">Адрес</a></li>
+                        <li><a href="#Date / Time">Дата/Час</a></li>
+                    </ul>
+                </div>
             </div>
-            <a name="section2">Привітання</a>
-            <p align=center>
-                <label>Текст на передній стороні</label>
-                <input type="text"></p>
-            <p align=center>
-                <label>Привітання на обороті</label>
-                <input type="text"></p>
-            <p align=center>
-                <label>Підпис</label>
-                <input type="text"></p>
-            <a name="section3">Адрес</a>
-            <p align=center>
-                <label>Вулиця</label>
-                <input type="text"></p>
-            <p align=center>
-                <label>Будинок</label>
-                <input type="text"></p>
-            <p align=center>
-                <label>Квартира</label>
-                <input type="text"></p>
-            <a name="section4">Дата/час</a>
-            <p align=center>
-                <label>Дата доставки</label>
-                <input type="text"></p>
-            <p align=center>
-                <label>Рекомендований час доставки</label>
-                <input type="text"></p>
-    </form>
-    </p>
+        </nav>
+
+        <div class="container jumbotron">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+
+
+                <!-- Wrapper for slides -->
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/1.jpg" alt="flower">
+                        <div class="carousel-caption">
+                            <h3 onclick="pic(1);">Flowers</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/2.jpg" alt="flower">
+                        <a>2</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/3.jpg" alt="flower">
+                        <a>3</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/4.jpg" alt="flower">
+                        <a>4</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/5.jpg" alt="flower">
+                        <a>5</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/6.jpg" alt="flower">
+                        <a>6</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/7.jpg" alt="flower">
+                        <a>7</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/8.jpg" alt="flower">
+                        <a>8</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/9.jpg" alt="flower">
+                        <a>9</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/10.jpg" alt="flower">
+                        <a>10</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/11.jpg" alt="flower">
+                        <a>11</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/12.jpg" alt="flower">
+                        <a>12</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/13.jpg" alt="flower">
+                        <a>13</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/14.jpg" alt="flower">
+                        <a>14</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/15.jpg" alt="flower">
+                        <a>15</a>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/16.jpg" alt="flower">
+                        <a>16</a>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <main class="container">
+
+
+            <form class="form-horizontal" action="https://formspree.io/ann.perey@gmail.com" method="POST">
+                <input id="pic" name="Картинка" hidden>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a name="Vidkrytka">Віткритка</a>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Текст на передній стороні</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="front" placeholder="Текст на передній стороні">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Привітання на обороті</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="back" placeholder="Привітання на обороті">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Підпис</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="sign" placeholder="Підпис">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a name="Address">Адрес</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Вулиця</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="street" placeholder="Вулиця">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Будинок</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="bld" placeholder="Будинок">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Квартира</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="appt" placeholder="Квартира">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a name="Address">Дата/Час</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="email">Дата</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="dt" placeholder="12-24-2016">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Рекомендований час доставки</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="tm" placeholder="16:00">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+    </main>
+
 </body>
 
 </html>
