@@ -15,5 +15,14 @@
 
 .flower {
     margin: 0 auto;
-    background-color: #ffccff;
+    background-color: #ff99ff;
+}
+#oc {
+    color: #009933;
+}
+#nom {
+    color: #ccccff;
+}
+#lvv {
+    color: #ffffcc;
 }
