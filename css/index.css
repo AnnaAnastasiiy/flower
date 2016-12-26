@@ -15,7 +15,7 @@
 
 .flower {
     margin: 0 auto;
-    background-color: #ff99ff;
+    background-color: #696969;
 }
 #oc {
     color: #333333;
@@ -25,4 +25,7 @@
 }
 #lvv {
     color: #ffffcc;
+}
+#occ {
+    color : #ffffff;
 }
